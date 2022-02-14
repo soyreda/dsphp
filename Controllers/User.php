@@ -1,7 +1,7 @@
 <?php
 
-require "../../helpers/helper.php";
 require "../../Models/User.php";
+require "../../helpers/helper.php";
 require "../../mail/sendMail.php";
 
 if(!isset($_SESSION)) {
