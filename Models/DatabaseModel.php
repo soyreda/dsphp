@@ -1,10 +1,10 @@
 <?php
 
 class DatabaseModel {
-  private $host = "localhost";
-  private $db = "photos";
-  private $user = "root";
-  private $pw = "";
+  private $host;
+  private $db;
+  private $user;
+  private $pw;
   private $pdo;
 
 
@@ -12,10 +12,10 @@ class DatabaseModel {
   private $error;
 
   public function __construct() {
-    $this->host = "localhost";
-    $this->db = "php";
-    $this->user = "root";
-    $this->pw = "";
+    $this->host = "x8autxobia7sgh74.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+    $this->db = "xgv43f0qjlhb5vyc";
+    $this->user = "yd7sj2jjf2w8qbu3";
+    $this->pw = "ou0nx0vedvvxbeh9";
     $this->pdo = null;
 
     $options = array(

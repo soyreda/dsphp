@@ -31,7 +31,7 @@ if(isset($_GET['id'])){
                                     </div>
                                     <div class="col d-flex flex-column flex-sm-row justify-content-between mb-3">
                                         <div class="text-center text-sm-left mb-2 mb-sm-0">
-                                       
+
                                             <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap"><?=$myuser['first_name'] ?> <?=$myuser['last_name'] ?></h4>
                                             <p class="mb-0"><?=$myuser['email'] ?></p>
                                             <div class="mt-2">
@@ -42,8 +42,8 @@ if(isset($_GET['id'])){
                                                 </button>
                                             </div>
                                         </div>
-                                        
-                                        
+
+
                                     </div>
                                 </div>
                                 <ul class="nav nav-tabs">
@@ -51,7 +51,7 @@ if(isset($_GET['id'])){
                                 </ul>
                                 <div class="tab-content pt-3">
                                     <div class="tab-pane active">
-                                        
+
                                             <div class="row">
                                                 <div class="col">
                                                     <div class="row">
@@ -89,7 +89,7 @@ if(isset($_GET['id'])){
                                             <div class="row">
                                                 <div class="col-12 col-sm-6 mb-3">
                                                     <div class="mb-2"><b>Change Password</b></div>
-                                                    
+
                                                     <div class="row">
                                                         <div class="col">
                                                             <div class="form-group">
@@ -107,7 +107,7 @@ if(isset($_GET['id'])){
                                                         </div>
                                                     </div>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="row">
                                                 <div class="col d-flex justify-content-end">
@@ -126,7 +126,7 @@ if(isset($_GET['id'])){
             </div>
 
         </div>
-    
+
     </div>
 </div>
 <script>
@@ -136,11 +136,11 @@ if(isset($_GET['id'])){
             img.setAttribute("alt", "image")
             img.src = "../../uploads/<?=$myuser['image']?>"
             document.getElementById("imgshow").appendChild(img)
-    
+
     imgInp.onchange = evt => {
         const [file] = imgInp.files
         if (file) {
-            
+
             if(document.getElementById("myimg")){
                 document.getElementById("myimg").src = URL.createObjectURL(file)
             }else{
@@ -150,10 +150,10 @@ if(isset($_GET['id'])){
             img.setAttribute("alt", "image")
             img.src = URL.createObjectURL(file)
             document.getElementById("imgshow").appendChild(img)
-            
-            
+
+
             }
-            
+
 
         }
     }
