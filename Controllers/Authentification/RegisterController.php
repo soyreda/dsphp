@@ -38,7 +38,7 @@ if(isset($_POST['submit'])){
         $req = $db->prepare("insert into users(email,password,first_name,last_name,about,dir,image,status,token,pwToken) values(?,?,?,?,?,?,?,?,?,?)");
         $status = "unverified";
     $req->execute([$email,$pw,$first_name,$last_name,$about,$dir,$image, $status, $token, $pwToken]);
-    sendMail($email, $token);
+    //sendMail($email, $token);
     header('location: ../../Views/Authentification/login.php?emailActivation=false');
     }
 
