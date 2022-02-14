@@ -2,7 +2,8 @@
 
 require "../../Models/User.php";
 require "../../helpers/helper.php";
-require "../../mail/sendMail.php";
+//require "../../mail/sendMail.php";
+require "../../phpMailer/sendMailer.php";
 
 if(!isset($_SESSION)) {
   session_start();
