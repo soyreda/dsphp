@@ -1,6 +1,13 @@
 <?php
-include "../includes/header.php"
+include "../includes/header.php";
+include "../../helpers/helper.php";
+if(!isset($_SESSION)) {
+  session_start();
+}
+
 ?>
+
+<?php if(!isset($_SESSION["currentUser"])): ?>
 
 
 <div class="container col-md-6 mt-5">
@@ -46,7 +53,10 @@ include "../includes/header.php"
     </div>
     </form>
 </div>
+<?php else: ?>
+  <?php redirect("../User/index.php"); ?>
 
+<?php endif ?>
 
 
 

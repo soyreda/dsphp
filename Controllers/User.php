@@ -63,6 +63,7 @@ class Users {
         if($row["status"] === "verified") {
           $_SESSION['user_id']=$row['id'];
           $_SESSION['dir']=$row['dir'];
+          $_SESSION["currentUser"] = $email;
           redirect("../../Views/User/index.php");
         } else {
           redirect("../../Views/Authentification/login.php?statusEmail=false");
